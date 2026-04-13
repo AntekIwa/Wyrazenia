@@ -14,4 +14,6 @@ public abstract class Wyrazenie {
         }
         return pole;
     }
+
+    public abstract Wyrazenie pochodna();
 }

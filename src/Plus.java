@@ -17,4 +17,9 @@ public class Plus extends Dwuargumentowe {
     public String operator(){
         return "+";
     }
+
+    @Override
+    public Wyrazenie pochodna(){
+        return new Plus(lewe.pochodna(), prawe.pochodna());
+    }
 }

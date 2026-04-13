@@ -1,4 +1,5 @@
 public class Zmienna extends Wyrazenie{
+
     @Override
     public double policz(double x){
         return x;
@@ -12,5 +13,10 @@ public class Zmienna extends Wyrazenie{
     @Override
     public String toString(){
         return "x";
+    }
+
+    @Override
+    public Wyrazenie pochodna(){
+        return new Stala(1);
     }
 }

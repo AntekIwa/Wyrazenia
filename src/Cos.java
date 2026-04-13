@@ -17,4 +17,9 @@ public class Cos extends Jednoargumentowe{
     public String toString(){
         return "cos(" + arg.toString() + ")";
     }
+
+    @Override
+    public Wyrazenie pochodna(){
+        return new Mnozenie(new Mnozenie(new Stala(-1), new Sin(arg)), arg.pochodna());
+    }
 }

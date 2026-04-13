@@ -18,4 +18,7 @@ public class Mnozenie extends Dwuargumentowe{
         return "*";
     }
 
+    public Wyrazenie pochodna(){
+        return new Plus(new Mnozenie(lewe.pochodna(), prawe), new Mnozenie(lewe, prawe.pochodna()));
+    }
 }

@@ -17,4 +17,9 @@ public class Sin extends Jednoargumentowe{
     public String toString(){
         return "sin(" + arg.toString() + ")";
     }
+
+    @Override
+    public Wyrazenie pochodna(){
+        return new Mnozenie(new Cos(arg), arg.pochodna());
+    }
 }

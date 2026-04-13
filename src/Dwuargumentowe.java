@@ -23,4 +23,5 @@ public abstract class Dwuargumentowe extends Wyrazenie{
         return wyrLewe + " " + operator() + " " + wyrPrawe;
     }
 
+
 }

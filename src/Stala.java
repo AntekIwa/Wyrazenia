@@ -22,4 +22,9 @@ public class Stala extends Wyrazenie {
         }
         return String.valueOf(wartosc);
     }
+
+    @Override
+    public Wyrazenie pochodna(){
+        return new Stala(0);
+    }
 }
